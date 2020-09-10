@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 const Film = (props) => {
     return(
@@ -6,4 +7,12 @@ const Film = (props) => {
     )
 }
 
-export default Film
+const mapStateToProps = state => { 
+    return { 
+      films: state.films
+    }} 
+  
+  export default connect(
+    mapStateToProps,
+    {}
+    ) (Film);
