@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 
 const Film = (props) => {
     return(
-        <div>I'm a film!</div>
+        <div>
+            {props.someFilm.title}
+        </div>
     )
 }
 

@@ -11,7 +11,7 @@ import thunk from "redux-thunk";
 import {ghibliReducer} from "./store/reducers/GhibliReducer";
 
 
-const store = createStore(ghibliReducer)
+const store = createStore(ghibliReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
