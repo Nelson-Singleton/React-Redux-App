@@ -14,7 +14,7 @@ function App({fetchFilms}) {
 
   return (
     <div className="App">
-      <p>Studio Ghibli film list</p>
+      <h1 className = "Titleh1">Studio Ghibli Masterpieces</h1>
       <Films />
       
     </div>

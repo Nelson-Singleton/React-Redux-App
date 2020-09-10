@@ -6,11 +6,13 @@ import Film from './Film'
 const Films = props => {
     console.log(props.films)
     return (
-        <div><p>This maps films</p>
+        
+        <div className = "Filmcontainer">
+            
         {props.films.map(someFilm => (
             <Film key = {someFilm.id} someFilm = {someFilm} />
         ))}
-            {/* <Film /> */}
+            
         </div>
 
     )

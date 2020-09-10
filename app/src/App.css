@@ -1,3 +1,25 @@
+.Filmcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Filmcard {
+  width: 28%;
+  background-color: white;
+  border: 1px solid black;
+  margin: 2% 2%;
+}
+
+.Titleh3 {
+  background-color: gray;
+  color: black;
+}
+
+.Titleh1 {
+  background-color: gray;
+}
 .App {
   text-align: center;
 }

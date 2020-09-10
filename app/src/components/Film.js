@@ -3,8 +3,11 @@ import { connect } from 'react-redux'
 
 const Film = (props) => {
     return(
-        <div>
-            {props.someFilm.title}
+        <div className = "Filmcard">
+            <h3 className = "Titleh3">Title: {props.someFilm.title}</h3>
+            <h3>Released: {props.someFilm.release_date}</h3>
+            <h3>Director: {props.someFilm.director}</h3>
+            <h3>Rating: {props.someFilm.rt_score}</h3>
         </div>
     )
 }
